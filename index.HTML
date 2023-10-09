@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>registration form</title>
+</head>
+<body>
+
+
+    <form action="message1.html">
+        <legend>REGISTRATION FORM</legend>
+        <br><br>
+        <fieldset> 
+            <legend>Personal Details</legend>
+        
+
+        <label for="fname">First Name</label>
+        <input type="text" placeholder="First_Name" id="fname" name="fname" required="" pattern="[A-Za-z]{7,10}">
+
+        <br><br>
+
+        <label for="mname">Middel Name</label>
+        <input type="text"  placeholder="Middel_Name" d="mname" name="mname" required="" pattern="[A-Za-z]{3,7}">
+
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="Last_Name" id="lname" name="lname" required="" pattern="[A-Za-z]{3,7}">
+
+        <br><br>
+        <label for="contact">Contact</label>
+        <input type="text" placeholder="Phone_no" id="contact" name="contact" required maxlength="10" pattern="[6-9]{1}[0-9]{9}">
+         <br><br>
+
+        
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Educational Details</legend>
+
+        <label for=" "> Departament</label>
+        <br><br>
+
+        <input type="radio" id="cs" name="dept">
+        <label for="cs">CS</label>
+
+        <input type="radio" id="civi" name="dept">
+        <label for="civil">CIVIL</label>
+
+        <input type="radio" id="mech" name="dept">
+        <label for="">MECH</label>
+        <br><br>
+
+        <label for="yop">YOG</label>
+        <input list="yog" id="yop" name="yop">
+        <datalist id="yog">
+
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+
+            
+            
+        </datalist>
+        <br><br>
+         <label for="sk"> Skills </label>
+         <br>
+        <input type="checkbox" id="sk">HTML
+        <input type="checkbox" id="sk">CSS
+        <input type="checkbox" id="sk">JAVA
+        <input type="checkbox" id="sk">JAVA SCRIPT
+        <input type="checkbox" id="sk">MYSQL
+        
+        
+  </fieldset>
+  <br>
+
+  <input type="submit" >
+
+ </form>
+    
+</body>
+</html>
