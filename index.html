@@ -3,6 +3,26 @@
 <head>
     
     <title>Form1</title>
+    <style>
+        .one{
+            background-color:orange;
+            font-family:cursive ;
+            width:25%;
+            
+        }
+        .two{
+            background-color:orange;
+            font-family: cursive ;
+            width: 25%;
+            
+        }
+        #one:hover{
+            background-color:yellow;
+             
+        }
+        
+
+    </style>
 </head>
 <body>
 
@@ -10,8 +30,11 @@
     <form action="message1.html">
         <legend>REGISTRATION FORM</legend>
         <br><br>
-        <fieldset> 
-            <legend>Personal Details</legend>
+        <fieldset class="one"> 
+            
+            <legend><h1>Personal details</h1></legend>
+            
+            
         
 
         <label for="fname">First Name</label>
@@ -38,8 +61,8 @@
 
     </fieldset>
 
-    <fieldset>
-        <legend>Educational Details</legend>
+    <fieldset class="two">
+        <legend><h1>Educational Details</h1></legend>
 
         <label for=" "> Departament</label>
         <br><br>
@@ -79,7 +102,7 @@
   </fieldset>
   <br>
 
-  <input type="submit" >
+  <input type="submit" id="one">
 
  </form>
     
