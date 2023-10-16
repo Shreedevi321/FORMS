@@ -2,109 +2,64 @@
 <html lang="en">
 <head>
     
-    <title>Form1</title>
-    <style>
-        .one{
-            background-color:orange;
-            font-family:cursive ;
-            width:25%;
-            
-        }
-        .two{
-            background-color:orange;
-            font-family: cursive ;
-            width: 25%;
-            
-        }
-        #one:hover{
-            background-color:yellow;
-             
-        }
-        
-
-    </style>
+    <title>Registration form</title>
 </head>
 <body>
-
-
-    <form action="message1.html">
-        <legend>REGISTRATION FORM</legend>
-        <br><br>
-        <fieldset class="one"> 
-            
-            <legend><h1>Personal details</h1></legend>
-            
-            
-        
-
-        <label for="fname">First Name</label>
-        <input type="text" placeholder="First_Name" id="fname" name="fname" required="" pattern="[A-Za-z]{7,10}">
-
-        <br><br>
-
-        <label for="mname">Middel Name</label>
-        <input type="text"  placeholder="Middel_Name" d="mname" name="mname" required="" pattern="[A-Za-z]{3,7}">
-
-        <br><br>
-
-        <label for="lname">Last Name</label>
-        <input type="text" placeholder="Last_Name" id="lname" name="lname" required="" pattern="[A-Za-z]{3,7}">
-
-        <br><br>
-        <label for="contact">Contact</label>
-        <input type="text" placeholder="Phone_no" id="contact" name="contact" required maxlength="10" pattern="[6-9]{1}[0-9]{9}">
-         <br><br>
-
-        
-        <label for="dob">DOB</label>
-        <input type="date" id="dob" name="dob">
-
-    </fieldset>
-
-    <fieldset class="two">
-        <legend><h1>Educational Details</h1></legend>
-
-        <label for=" "> Departament</label>
-        <br><br>
-
-        <input type="radio" id="cs" name="dept">
-        <label for="cs">cs</label>
-
-        <input type="radio" id="civi" name="dept">
-        <label for="civil">civil</label>
-
-        <input type="radio" id="mech" name="dept">
-        <label for="mech">mech</label>
-        <br><br>
-
-        <label for="yop">YOG</label>
-        <input list="yog" id="yop" name="yop">
-        <datalist id="yog">
-
-            <option>2018</option>
-            <option>2019</option>
-            <option>2020</option>
-            <option>2021</option>
-            <option>2022</option>
-            <option>2023</option>
-
-            
-            
-        </datalist>
-        <br><br>
-         <label for="sk"> Skills </label>
-         <br>
-        <input type="checkbox" id="sk">html
-        <input type="checkbox" id="sk">css
-        <input type="checkbox" id="sk">java
-
-        
-  </fieldset>
-  <br>
-
-  <input type="submit" id="one">
-
- </form>
+    <form action="Message.html">
+      <h1>Course Registration form</h1>
     
+    <br>
+    <fieldset>
+        
+        <legend>Personal Details</legend>
+        <table>
+          <tr><td><label for="name">First Name</label></td><td><input type="name" placeholder="ex:shree" required="" size="15"  pattern="[A-za-z]{5-10}"></td></tr>
+          <tr><td><label for="">Surname</label></td><td><input type="text" placeholder="ex:suresh" required="" size="15" pattern="[A-za-z]{5-7}"></td></tr>
+         <tr><td><label for="">Mobile-Number</label></td><td><input type="tel" placeholder="ex:1234056789" size="15" ></td></tr>
+         <tr><td><label for="">Email</label></td><td><input type="text" placeholder="ex:shree@123" size="15"></td></tr>
+         <tr><td><label>Password</label></td><td><input type="password" size="15" placeholder="min 5 charecters"  name="paswd"></td></tr>
+         <tr><td><label for="">Confirm Password</label></td><td><input type="password" name="cfpsw" size="15"  placeholder="min 5 charecters" ></td></tr>
+         <tr><td><label for="dob">DOB</label></td><td><input type="date" id="dob" name="dob"></td></tr>
+        </table>
+          <label for="">Gender</label>
+          <input type="radio" id="male" value="M">male
+          <input type="radio" id="female" value="F">Female
+          <input type="radio"  id="custome" value="C">Custome
+          <br><br>
+          <label for="">Select Country</label>
+          <select name="country" >
+          <option value="INDIA">INDIA</option>
+          <option value="USA">USA</option>
+          <option value="CHINA">CHINA</option>
+          <option value="RASSIA">RUSSIA</option>
+        </select>
+          <br><br>
+          <label for="">Uplode Picture</label>
+          <input type="file" name="pic">
+          <br><br>
+          <input type="Reset">
+        </fieldset>
+
+          <fieldset>
+            <legend>Course Details</legend>
+          <br>
+          <label for="">Select Course</label>
+          <select name="course" id="cou">
+            <option value="PFS">Python Full Stack</option>
+            <option value="JFS">Java Full Stack</option>
+            <option value="MS"> MYSQL</option>
+            <option value="HT">HTML</option>
+        </select>
+        <br><br>
+        <label for="">Delivary mode</label>
+        <input type="checkbox" value="on" name="mode1">ONLINE
+        <input type="checkbox" value="off" name="mode2">OFFLINE
+            <br><br>
+            <label for="">Comments</label>
+            <br>
+           <textarea name="comments"  cols="40" rows="4"></textarea>
+       </fieldset>
+       <input type="submit">
+    </form>
 </body>
 </html>
